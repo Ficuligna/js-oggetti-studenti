@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <!-- dato che si tratta di whatsappweb non mi preoccupo del meta che gestisce il viewport in mobile :) -->
+    <meta charset="utf-8">
+    <title>Boolzapp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/aba854a051.js"></script>
+  </head>
+  <body>
+    <div class="bottone">
+      <button type="button" name="button">Inserisci nuovo studente</button>
+    </div>
+
+    <script id="giacomino-template" type="text/x-handlebars-template">
+      <div class="schedastudente">
+        <div class="nome">
+          Nome <span>{{nome}}</span>
+        </div>
+        <div class="cognome">
+          Cognome <span>{{cognome}}</span>
+        </div>
+        <div class="eta">
+          Età <span>{{eta}}</span>
+        </div>
+        <div class="numero">
+          Numero Matricola  <span>{{numero}}</span>
+        </div>
+      </div>
+    </script>
+
+    <!-- fine template -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
+  </body>
+</html>
